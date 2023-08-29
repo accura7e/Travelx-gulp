@@ -4,7 +4,7 @@
 	background-color: #c4c4c4;
 	color: #fff;
 
-	background-image: url(./../img/01.jpg);
+	
 }
 
 
@@ -20,7 +20,7 @@
 	left: 70px;
 	right: 70px;
 
-	background-color: rgba(255, 255, 255, 0.3);
+	
 	
 	pointer-events: none;
 
@@ -42,4 +42,58 @@
 
 
 }
+
+.header__nav{
+	pointer-events: all;
+}
+
+
+.header__socials {
+	pointer-events: all;
+	position: absolute;
+	
+	left: 0;
+	top: 50%;
+	transform: translate(0, -50%);
+	
+	@media(max-width: 767px){
+		display: none;
+	}
+	
+	@media(max-height: 600px){
+		top: 40%;
+	}
+	
+	
+	height: 120px;
+	width: 20px;
+}
+.header__see-more {
+	pointer-events: all;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	
+	
+	
+}
+.header__slider-controls {
+	pointer-events: all;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	
+	pointer-events: all;
+}
+.header__scrollbar {
+	pointer-events: all;
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 10px;
+	height: 400px;
+	background-color: #fff;
+	transform: translate(0, -50%);
+}
+
 
