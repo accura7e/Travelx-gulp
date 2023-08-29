@@ -12,6 +12,19 @@
         );
 }
 
+@mixin background-clip{
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+@mixin background-size{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .slide {
     height: 100vh;
     overflow: hidden;
@@ -24,16 +37,50 @@
     
 
 
-    background: var(--radial-bg),
+
+        
+
+
+    &--norway {
+        background: var(--radial-bg),
 
     var(--linear-bg),
     url('./../img/01.jpg');
-        
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include background-size;
+    }
 
-    
+
+    &--austria{
+        background: var(--radial-bg),
+
+        var(--linear-bg),
+        url('./../img/02.jpg');
+        @include background-size;
+    }
+
+    &--uae{
+        background: var(--radial-bg),
+
+        var(--linear-bg),
+        url('./../img/03.jpg');
+        @include background-size;
+    }
+
+    &--thailand{
+        background: var(--radial-bg),
+
+        var(--linear-bg),
+        url('./../img/04.jpg');
+        @include background-size;
+    }
+
+    &--morocco{
+        background: var(--radial-bg),
+
+        var(--linear-bg),
+        url('./../img/05.jpg');
+        @include background-size;
+    }
 
     &::before{
         content: '';
@@ -57,6 +104,8 @@
 
 
 }
+
+
 .slide__header {
     text-align: center;
     position: relative;
@@ -86,15 +135,81 @@
 
     span{
         padding: 0 10px;
+
+
+        
+
+    }  
+    
+
+
+    &--norway span{
         background: linear-gradient(
             47deg,
-            #000 -3.87%,
+            #051D27 -3.87%,
             rgba(255, 255, 255, 0) 20.89%
         ),
         #ffffff;
 
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+
+        @include background-clip;
+
+
+    }
+
+    &--austria span{
+        background: linear-gradient(
+            47deg,
+            #122127 -3.87%,
+            rgba(255, 255, 255, 0) 20.89%
+        ),
+        #ffffff;
+
+
+        @include background-clip;
+
+
+    }
+
+    &--uae span{
+        background: linear-gradient(
+            47deg,
+            #AA6627 -3.87%,
+            rgba(255, 255, 255, 0) 20.89%
+        ),
+        #ffffff;
+
+
+        @include background-clip;
+
+
+    }
+    &--thailand span{
+        background: linear-gradient(
+            47deg,
+            #2E7C88 -3.87%,
+            rgba(255, 255, 255, 0) 20.89%
+        ),
+        #ffffff;
+
+
+        @include background-clip;
+
+
+    }
+
+    &--morocco span{
+        background: linear-gradient(
+            47deg,
+            #757575 -3.87%,
+            rgba(255, 255, 255, 0) 20.89%
+        ),
+        #ffffff;
+
+
+        @include background-clip;
+
+
     }
 }
 .slide__locations {
