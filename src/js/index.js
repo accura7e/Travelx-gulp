@@ -1,5 +1,7 @@
-// import mobileNav from './modules/mobile-nav.js';
-// mobileNav();
+import mobileNav from './modules/mobile-nav.js';
+import loader from './modules/loader.js';
+mobileNav();
+loader();
 
 
 import Swiper from 'swiper/bundle';
@@ -31,3 +33,5 @@ const swiper = new Swiper('.swiper', {
       el: '.swiper-scrollbar',
     },
   });
+
+  

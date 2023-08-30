@@ -9,7 +9,9 @@
 	</head>
 	<body>
 		
-		
+		<div class="loader-wrapper" id="loader">
+			<span class="loader"></span>	
+		</div>
 
 		<header class="header">
 			<!-- Swiper -->
@@ -178,7 +180,7 @@
 			<div class="header__content">
   <div class="header__nav"><nav class="nav">
     <a class="nav__logo" href="#!">
-        <img src="./../img/Logo.svg" alt="">
+        <img src="./img/Logo.svg" alt="">
     </a>
 
     <div class="nav__list">
@@ -192,7 +194,7 @@
 
     <div class="nav__mobile-nav">
         <button id="modalOpen" class="nav-btn">
-            <img src="./../img/nav-btn-closed.svg" alt="Nav button">
+            <img src="./img/nav-btn-closed.svg" alt="Nav button">
         </button>
     </div>
 </nav></div>
@@ -230,6 +232,24 @@
     <div class="swiper-scrollbar"></div>
   </div>
 </div>
+
+			<div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+
+ 
+<div class="mobile-nav" id="mobileNav">
+	<button id="modalClose" class="mobile-nav__btn">
+		<img src="./img/nav-btn-opened.svg" alt="">
+	</button>
+	<ul class="mobile-nav__list">
+		<li><a href="#" class="active">Home</a></li>
+		<li><a href="#!">Services</a></li>
+		<li><a href="#!">About</a></li>
+		<li><a href="#!">Projects</a></li>
+		<li><a href="#!">Contact</a></li>
+	</ul>
+</div>
+
 
 		</header>
 
